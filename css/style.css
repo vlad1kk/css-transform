@@ -45,6 +45,7 @@ p {
 }
 
 /* Основні стилі */
+/* 2D transform: */
 .content__2D .content__block div {
 	display: flex;
 	text-transform: uppercase;
@@ -120,4 +121,40 @@ p {
 .content__origin:hover {
 	transform-origin: top right;
 	transform: rotate(-45deg);
+}
+
+/* ======================================================= */
+/* 3D transform: */
+.content__3D .content__block div {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+}
+.content__wrapper3d {
+	width: 100px;
+	height: 100px;
+	margin-left: 50px;
+	background-color: grey;
+	perspective: 500px;
+
+}
+.content__perspective {
+	background-color: greenyellow;
+
+}
+.content__perspective:hover {
+	transform: rotateX(30deg); 
+}
+
+.content__translate3d{
+	background-color: rgb(9, 182, 12);
+}
+.content__translate3d:hover{
+	transform: translate3d(50px, 50px, -50px); 
 }
