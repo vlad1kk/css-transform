@@ -93,4 +93,31 @@ p {
 .content__skew:hover {
 	transform: skew(15deg, 0deg);
 }
-
+.content__matrix{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(223, 157, 27);
+	margin-left: 30px;
+}
+.content__matrix:hover {
+	transform: matrix(1.2, 0, 0, 1.2, 75, 25);
+}
+.content__multi{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(232, 3, 3);
+	margin-left: 30px;
+}
+.content__multi:hover {
+	transform: translate(20px, 20px) scale(1.1, 1.1) rotate(360deg);
+}
+.content__origin{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(8, 185, 123);
+	margin-left: 30px;
+}
+.content__origin:hover {
+	transform-origin: top right;
+	transform: rotate(-45deg);
+}
